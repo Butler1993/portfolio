@@ -1,0 +1,282 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: lightblue;
+  }
+
+  header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    z-index: 999;
+  }
+
+  .logo {
+    width: 70px;
+    height: 70px;
+    left: 4px;
+  }
+
+
+  .links {
+    padding: 20px;
+    float: right;
+    margin-right: 50px;
+
+  }
+
+  nav {
+    background-color: white;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+  }
+
+  nav .nav-links a {
+    padding: 0px 20px;
+    color: black;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    background-color: grey;
+    border-radius: 4px;
+    color: white;
+    padding: 4px;
+  }
+
+  nav a:active {
+    background-color: black;
+
+  }
+
+  a {
+    float: right;
+    list-style-type: none;
+
+  }
+
+  footer {
+    background-color: black;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    color: white;
+
+
+  }
+
+  .footer-divs {
+    text-align: center;
+  }
+
+  .fa {
+    font-size: 25px;
+    margin: 0 10px;
+    color: white;
+  }
+
+  span{
+    font-size: 15px; 
+  }
+
+  /*styles for gallery page*/
+
+.dream {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.dream img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3/2;
+}
+
+.heading {
+    margin: 30px 20px;
+}
+
+.heading h3 span {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+/* styles for about me page*/
+
+.row {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin: 20px 100px;
+  }
+  .row > div {
+    flex: 1 1;
+  }
+  
+.leftcolumn .card{
+text-align: center;
+border: none;
+box-shadow: 0 0 10px rgb(211, 210, 210);
+border-radius: 30px;
+z-index: -1;
+}
+
+.vimg {
+background-image: url('pic.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+height: 200px;
+width: 200px;
+border-radius: 50%;
+margin: 50px auto;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.profession {
+margin: 10px;
+}
+
+.socialmedia {
+display: flex;
+margin: 50px auto;
+}
+
+.socialmedia a i{
+color: #000
+}
+
+.card {
+background-color: white;
+}
+
+.rightcolumn {
+margin: auto 20px;
+}
+
+.download-buttons button {
+padding: 5px 20px;
+border-radius: 10px;
+margin-left: 10px;
+border: none;
+background: blue;
+color: white
+}
+
+/*styles for contact page*/
+
+.form_container{
+    display: flex;
+    margin:10%;
+    align-items: center;
+  }
+
+  form{
+    border-radius: 20px;
+    margin: 0px 20px;
+    padding: 30px 80px 40px 80px;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow:0px 0px 10px ,
+  }
+  
+h4 .inner_hd{
+  font-family: 'Times New Roman', Times, serif;
+}
+.ipt{
+  width:400px;
+  border-radius: 5px;
+  margin:6px;
+  padding:6px;
+  background-color: azure;
+  border-bottom: 2px ;
+  
+  
+}
+
+textarea{
+  width:70%;
+  height:150px;
+  border-radius: 2px;
+  background-color: azure;
+}
+.ipt1{
+  margin:6px;
+  width:300px;
+  padding:6px;
+  background-color: azure;
+  border-radius: 5px;
+  border-bottom: 2px ;
+
+  
+}
+
+/* styles for resume page */
+
+.experience {
+    margin: 15px 30px
+  }
+  
+  .experience h2 {
+    margin: 15px 0;
+  }
+
+  .experience .experiencedetail {
+    background-color: white;
+    box-shadow: 0 0 10px rgb(211, 210, 210);
+    border-radius: 30px;
+    padding: 15px;
+    margin: 0px 50px;
+  }
+
+  .innerdetails {
+    margin: 10px 0;
+  }
+
+  .innerdetails h5 {
+    padding: 10px;
+  }
+
+  .innerdetails p {
+    padding: 10px;
+    margin: auto 0;
+  }
+
+  /*styles for home page*/
+
+  .carousel-item {
+    height: 600px;
+    text-align: center;
+    
+  }
+
+  .carousel-item img {
+    height: 100%;
+    width:60%;
+    border-radius: 50%;
+    box-shadow: 3px;
+    transition: width 1s ease-in-out ;
+  }
+
+  .carousel-item img:hover{
+    width: 80%;
+  }
